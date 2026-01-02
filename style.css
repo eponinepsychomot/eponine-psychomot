@@ -112,3 +112,54 @@ header .logo {
     width: 120px;  /* plus petit sur mobile */
   }
 }
+/* Header principal */
+header {
+  display: flex;               /* aligne logo et texte sur la même ligne */
+  align-items: center;         /* centre verticalement le texte par rapport au logo */
+  gap: 20px;                   /* espace entre logo et texte */
+  background-color: #8fb9a8;   /* vert doux */
+  color: white;
+  padding: 20px 30px;
+}
+
+/* Logo */
+header .logo {
+  width: 180px;   /* largeur du logo, adapte à ton goût */
+  height: auto;
+}
+
+/* Texte */
+header .header-text h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+header .header-text p {
+  margin: 5px 0 0 0;
+  font-size: 1.1em;
+}
+
+/* Responsive : mobile */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;    /* logo au-dessus du texte sur petits écrans */
+    text-align: center;
+  }
+
+  header .logo {
+    width: 140px;              /* logo plus petit sur mobile */
+    margin-bottom: 10px;
+  }
+
+  header .header-text h1 {
+    font-size: 1.5em;
+  }
+
+  header .header-text p {
+    font-size: 1em;
+  }
+}
+header .logo:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
