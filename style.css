@@ -12,9 +12,11 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
-  background-color: #E6F3F8;   /* bleu-vert doux */
-  color: white;
-  padding: 30px 30px;
+
+  background-color: #E6F3F8; /* bleu ciel pastel */
+  color: #333;
+
+  padding: 20px 30px;
 }
 
 /* Logo */
