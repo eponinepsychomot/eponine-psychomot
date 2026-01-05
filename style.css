@@ -1,7 +1,7 @@
 /* ---------- Base ---------- */
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: red !important;;
   color: #333;
   margin: 0;
   line-height: 1.6;
