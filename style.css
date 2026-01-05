@@ -23,11 +23,21 @@ header {
 header .logo {
   width: 300px;
   height: auto;
-  transition: transform 0.3s ease;
+
+  background-color: #E6F3F8;
+  padding: 6px;
+
+  border: 4px solid #333;
+  border-radius: 8px;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 header .logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 /* Texte du header */
@@ -41,6 +51,24 @@ header .header-text p {
   font-size: 1.1em;
 }
 
+/* ---------- Titre avec dégradé pastel ---------- */
+.titre-degrade {
+  background: linear-gradient(
+    90deg,
+    #E6A36F,
+    #DFA3BE,
+    #B6A5D8,
+    #9FC8D9,
+    #9FCBB3
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-weight: 700;
+  font-size: 1.9em;
+  letter-spacing: 0.5px;
+}
+
 /* ---------- Sections ---------- */
 section {
   background: white;
@@ -50,145 +78,4 @@ section {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
-}
-
-/* ---------- Titres par section (pastel) ---------- */
-
-/* Qui suis-je ? → ORANGE PASTEL */
-h2.qui {
-  color: #E6A36F;
-}
-
-/* La psychomotricité → ROSE PASTEL */
-h2.psy {
-  color: #DFA3BE;
-}
-
-/* Prestations proposées → VIOLET PASTEL */
-h2.prestations {
-  color: #B6A5D8;
-}
-
-/* Secteur d’intervention → BLEU PASTEL */
-h2.secteur {
-  color: #9FC8D9;
-}
-
-/* Contact → VERT PASTEL */
-h2.contact {
-  color: #9FCBB3;
-}
-
-/* Icônes dans les titres */
-h2 i {
-  margin-right: 10px;
-  font-size: 1.2em;
-  vertical-align: middle;
-}
-
-
-/* ---------- Texte ---------- */
-.texte-justifie {
-  text-align: justify;
-}
-
-/* ---------- Bouton Doctolib ---------- */
-.btn {
-  display: inline-block;
-  background-color: #E6F3F8;   /* bleu-vert doux */
-  color: black;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #B6A5D8;
-  transform: scale(1.05);
-}
-
-/* ---------- Liens ---------- */
-a {
-  color: #4A8C8A;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* ---------- Footer ---------- */
-footer {
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-  color: #666;
-}
-
-/* ---------- Responsive (mobile) ---------- */
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  header .logo {
-    width: 140px;
-    margin-bottom: 10px;
-  }
-
-  header .header-text h1 {
-    font-size: 1.5em;
-  }
-
-  header .header-text p {
-    font-size: 1em;
-  }
-}
-/* ---------- Titre avec dégradé pastel ---------- */
-.titre-degrade {
-  background: linear-gradient(
-    90deg,
-    #E6A36F,  /* orange pastel */
-    #DFA3BE,  /* rose pastel */
-    #B6A5D8,  /* violet pastel */
-    #9FC8D9,  /* bleu pastel */
-    #9FCBB3   /* vert pastel */
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  font-weight: 700;
-}
-.titre-degrade {
-  font-size: 1.9em;
-  letter-spacing: 0.5px;
-}
-header .logo {
-  width: 300px;
-  height: auto;
-
-  background-color: #E6F3F8;          /* fond propre derrière le logo */
-  padding: 6px;                     /* espace entre logo et contour */
-
-  border: 4px solid #333;         /* contour discret */
-  border-radius: 8px;               /* coins légèrement arrondis */
-
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* ombre légère */
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-header .logo:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
 
