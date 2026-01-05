@@ -178,7 +178,7 @@ header .logo {
   background-color: #C7E3DE;          /* fond propre derrière le logo */
   padding: 6px;                     /* espace entre logo et contour */
 
-  border: 1.5px solid #333;         /* contour discret */
+  border: 4px solid #333;         /* contour discret */
   border-radius: 8px;               /* coins légèrement arrondis */
 
   box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* ombre légère */
