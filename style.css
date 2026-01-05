@@ -160,3 +160,13 @@ footer {
     font-size: 1em;
   }
 }
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.titre-degrade {
+  background-size: 300% 300%;
+  animation: gradientMove 6s ease infinite;
+}
