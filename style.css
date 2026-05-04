@@ -171,3 +171,26 @@ footer {
   background-size: 300% 300%;
   animation: gradientMove 6s ease infinite;
 }
+/* ---------- Bouton fixe à droite ---------- */
+.bouton-fixe {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: #B6A5D8; /* violet pastel */
+  color: #333;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.bouton-fixe:hover {
+  background-color: #DFA3BE; /* rose pastel */
+  transform: translateY(-50%) scale(1.05);
+}
